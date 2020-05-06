@@ -15,6 +15,11 @@ func compute(x int) (result int) {
 	return
 }
 
+func multipleReturn() int {
+	return 1
+	return 2
+}
+
 func main() {
 	printEmployeeInfo("John", "Diggle", "Security")
 	printEmployeeInfo("Oliver", "Queen", "CEO")
@@ -26,4 +31,7 @@ func main() {
 	fmt.Printf("x = %v, y = %v, sum(x, y) = %v, %v\n", x, y, res1, res2)
 
 	fmt.Printf("compute(x) = %v\n", compute(13))
+
+	fmt.Printf("multipleReturn() = %v\n", multipleReturn())
+	fmt.Printf("multipleReturn() = %v\n", multipleReturn())
 }
